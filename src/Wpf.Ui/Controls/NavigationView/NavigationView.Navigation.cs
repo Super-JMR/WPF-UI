@@ -2,11 +2,12 @@
 // If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
-//
-// Based on Windows UI Library
+
+/* Based on Windows UI Library */
 
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using Wpf.Ui.Abstractions;
 
 // ReSharper disable once CheckNamespace
 namespace Wpf.Ui.Controls;
@@ -28,6 +29,7 @@ public partial class NavigationView
     > _complexNavigationStackHistory = [];
 
     private IServiceProvider? _serviceProvider;
+
     private IPageService? _pageService;
 
     private int _currentIndexInJournal;
